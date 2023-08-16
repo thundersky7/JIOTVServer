@@ -61,18 +61,21 @@ import { handler } from "./build/handler.js";
 
 app.use(handler);
 
-app.listen(PORT, () => {
+app.listen(PORT,IFCONFIG, () => {
   console.log("===================================================================");
   console.log(chalk.green("THIS SERVER IS 100% FREE. PLEASE DON'T PAY ANYONE."));
   console.log(chalk.green("STRICT ACTION WILL BE TAKEN AGAINST THOSE WHO ARE SELLING THIS."));
   console.log(chalk.green("IF ANYONE TRYING TO SELL IT, PLEASE REPORT IT ON OUR DISCORD SERVER\nhttps://discord.gg/suyzkCQKhC"));
   console.log(chalk.green("Please Stare Repo https://github.com/dhruv-2015/JIOTVServer"));
+  console.log(chalk.green("Please Stare my Repo too : https://github.com/thundersky7/JIOTVServer"));
+  console.log(chalk.green("ThunderSky7 : JIO TV"));
   console.log(chalk.green("VERSION 2.8.6"));
     console.log(chalk.green("980+ CHANNELS AVAILABLE. MORE FEATURES WILL COME SOON. STAY TUNED"));
     console.log("===================================================================");
     console.log(chalk.red("       __ ____ ____     ______ _    __ \n      / //  _// __ \\   /_  __/| |  / / \n __  / / / / / / / /    / /   | | / /  \n/ /_/ /_/ / / /_/ /    / /    | |/ /   \n\\____//___/ \\____/    /_/     |___/    \n                                "));
     console.log("===================================================================");
     console.log(`TV server is running on port ${PORT}`);
+    console.log(`TV server is running : ${IFCONFIG} on port ${PORT}`);
     console.log(`Please open http://localhost:${PORT}/login to login and get playlist if running server for the first time`);
     // console.log(chalk.red("need to login every 24 hours even if you are already logged in"));
     console.log("If facing any errors, please login from portal again");
